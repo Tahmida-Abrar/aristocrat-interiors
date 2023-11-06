@@ -61,7 +61,7 @@ small {
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 4.5%;
+  letter-spacing: 2.5px;
 }
 a {
   display: inline-block;
@@ -185,10 +185,11 @@ img {
 
 .hero__right {
   flex: 1;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .hero__right > img {
-  width: 50%;
+  width: 55%;
 }
