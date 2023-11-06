@@ -38,6 +38,9 @@ body {
   color: var(--color-black);
   overflow-x: hidden;
 }
+.main {
+  margin: 8rem;
+}
 /* typography */
 h1 {
   font-size: 8rem;
@@ -58,7 +61,7 @@ small {
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 3.5%;
+  letter-spacing: 4.5%;
 }
 a {
   display: inline-block;
@@ -69,11 +72,52 @@ button {
   font-weight: inherit;
   cursor: pointer;
 }
+/* common style */
+.btn {
+  padding: 1.5rem 3rem;
+}
+
+.btn__primary {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border: 2px solid var(--color-blue);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn__primary:hover {
+  background-color: transparent;
+  color: var(--color-blue);
+}
+.btn__secondary {
+  background-color: var(--color-orang);
+  color: var(--color-white);
+  border: 2px solid var(--color-orang);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn__secondary:hover {
+  background-color: transparent;
+  color: var(--color-orang);
+}
+
+img {
+  display: block;
+}
+
+/* Header */
 .header {
   height: 8rem;
   border-bottom: var(--border-regular);
   display: flex;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(250, 250, 250, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
 }
 .navber {
   display: flex;
@@ -112,4 +156,39 @@ button {
 }
 .navber__link__item:hover::after {
   width: 100%;
+}
+
+/* Hero style */
+.hero {
+  height: calc(100vh - 8rem);
+  padding: 8rem 5rem;
+  display: flex;
+  gap: 8rem;
+  background-color: var(--color-gray);
+}
+.hero__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2.5rem;
+  justify-content: center;
+}
+.hero__left > small {
+  color: var(--color-blue);
+}
+
+.hero__left > p {
+  opacity: 75%;
+  max-width: 75%;
+}
+
+.hero__right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero__right > img {
+  width: 50%;
 }
