@@ -1,6 +1,6 @@
 @media screen and (max-width: 1366px) {
   .hero__right > img {
-    width: 75%;
+    width: 50%;
   }
   .about__wrapper {
     grid-template-columns: 1fr;
